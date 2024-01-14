@@ -1,7 +1,44 @@
-:root{
---header-font:  "ff-prater-sans-web", sans-serif;
---body-font: "figgins-sans", sans-serif;
+:root {
+  --header-font: "ff-prater-sans-web", sans-serif;
+  --body-font: "figgins-sans", sans-serif;
 
+  --header: #025548;
+  --primary: #f8f6f1;
+  --secondary: #dc520e;
+  --tertiary: #b8dfff;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--primary);
+}
+
+header {
+  background-color: var(--header);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.3em;
+}
+
+.nav-link {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+.header-logo {
+  max-width: 10em;
+}
+
+footer{
+    background-color: var(--header);
+    color: var(--primary);
 }
 
 /* font-family: "ff-prater-sans-web", sans-serif;

@@ -6,10 +6,17 @@
   --primary: #f8f6f1;
   --secondary: #dc520e;
   --tertiary: #b8dfff;
+
+  --text-sm: 1.2em;
+  --text-md: 1.7em;
 }
 
-html{
+html {
   scroll-behavior: smooth;
+}
+
+h2{
+  font-family: var(--header-font);
 }
 
 body {
@@ -20,10 +27,11 @@ body {
 header {
   background-color: var(--header);
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
+  /* flex-direction: column; */
   align-items: center;
-  padding: 0.3em;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
 }
 
 .nav-link {
@@ -36,10 +44,43 @@ header {
   max-width: 10em;
 }
 
-footer{
-    background-color: var(--header);
-    color: var(--primary);
+.cta-button {
+  font-family: "figgins-sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: var(--secondary);
+  color: var(--primary);
+  padding: 0.2em;
+  display: flex;
+  justify-content: center;
+  border-radius: 12%/50%;
+  width: 8em;
+  font-size: var(--text-md);
+
 }
+
+.cta-button:hover{
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.home-cta{
+  font-size: var(--text-md);
+  padding: 4em 0;
+}
+
+footer {
+  background-color: var(--header);
+  color: var(--primary);
+  padding: 1em;
+}
+
+/* .carousel-img{
+  border-radius: 7px;
+} */
+
+
+
 
 /* font-family: "ff-prater-sans-web", sans-serif;
 font-weight: 700;

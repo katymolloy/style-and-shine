@@ -96,9 +96,11 @@ footer a{
   color: var(--header);
 }
 
+
+
 @media (min-width: 992px) {
   .content {
-    margin: 0 15%;
+    /* margin: 0 15%; */
   }
 
   header {
@@ -143,7 +145,7 @@ footer a{
   }
 
   .carousel-img {
-    width: 40em;
+    width: 30em;
   }
 
  

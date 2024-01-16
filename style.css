@@ -9,19 +9,24 @@
 
   --text-sm: 1.2em;
   --text-md: 1.7em;
+  --text-lg: 2em;
+
+  --weight-500: 500;
+  --weight-600: 600;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-h2{
+h2 {
   font-family: var(--header-font);
 }
 
 body {
   font-family: var(--body-font);
   background-color: var(--primary);
+  margin: 0;
 }
 
 header {
@@ -32,6 +37,11 @@ header {
   align-items: center;
   padding: 0.5em 1em;
   margin-bottom: 1em;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-menu {
+  display: none;
 }
 
 .nav-link {
@@ -42,6 +52,10 @@ header {
 
 .header-logo {
   max-width: 10em;
+}
+
+.header-tagline{
+  display: none;
 }
 
 .cta-button {
@@ -56,31 +70,84 @@ header {
   border-radius: 12%/50%;
   width: 8em;
   font-size: var(--text-md);
-
 }
 
-.cta-button:hover{
+.cta-button:hover {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   text-decoration: none;
 }
 
-.home-cta{
+.home-cta {
   font-size: var(--text-md);
   padding: 4em 0;
 }
 
 footer {
-  background-color: var(--header);
-  color: var(--primary);
+  background-color: var(--tertiary);
+  color: black;
   padding: 1em;
 }
 
-/* .carousel-img{
-  border-radius: 7px;
-} */
+footer a{
+  color: var(--secondary)
+}
 
+.dropdown {
+  color: var(--header);
+}
 
+@media (min-width: 992px) {
+  .content {
+    margin: 0 15%;
+  }
 
+  header {
+    background-color: var(--header);
+    padding: 0.5em 3em;
+    height: 7em;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header-tagline{
+    display: flex;
+    margin-left: 7em;
+    font-family: var(--header-font);
+    color: var(--tertiary);
+    font-size: var(--text-lg);
+  }
+
+  .dropdown {
+    display: none;
+  }
+  .nav-menu{
+    display: flex;
+   
+  }
+
+  .nav-menu a{
+    color: var(--primary);
+    font-size: var(--text-md);
+    font-weight: var(--weight-600);
+  }
+
+  .nav-menu a:hover{
+    background-color: var(--header);
+    color: var(--tertiary)
+  }
+  .header-logo {
+    max-width: 13em;
+    margin: -1.4em 0;
+    position: absolute;
+  }
+
+  .carousel-img {
+    width: 40em;
+  }
+
+ 
+}
 
 /* font-family: "ff-prater-sans-web", sans-serif;
 font-weight: 700;

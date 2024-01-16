@@ -10,6 +10,7 @@
   --text-sm: 1.2em;
   --text-md: 1.7em;
   --text-lg: 2em;
+  --text-xl: 2.4em;
 
   --weight-500: 500;
   --weight-600: 600;
@@ -86,8 +87,14 @@ footer {
   background-color: var(--tertiary);
   color: black;
   padding: 1em;
+  height: 8em;
+  top-margin: 2em;
 }
 
+
+.about-image{
+  border-radius: 7px;
+}
 footer a {
   color: var(--secondary);
 }
@@ -102,6 +109,11 @@ footer a {
 
 .carousel {
   z-index: -1;
+}
+
+.section-title{
+  color: var(--secondary);
+
 }
 
 @media (min-width: 992px) {
@@ -178,6 +190,10 @@ footer a {
     left: 15%;
     z-index: 1;
     transform: rotate(7deg);
+  }
+
+  .section-title{
+    font-size: var(--text-xl);
   }
 }
 

@@ -32,8 +32,6 @@ body {
 }
 
 
-
-
 /* nav styling */
 .nav-menu {
   display: none;
@@ -47,7 +45,6 @@ body {
 
 
 /* nav dropdown styling  */
-
 .btn-secondary:not(:disabled):not(.disabled).active,
 .btn-secondary:not(:disabled):not(.disabled):active,
 .show > .btn-secondary.dropdown-toggle {

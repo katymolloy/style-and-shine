@@ -89,6 +89,10 @@ header {
   display: none;
 }
 
+
+/* home section */
+
+
 .cta-button {
   font-family: "figgins-sans", sans-serif;
   font-weight: var(--weight-700);
@@ -109,7 +113,8 @@ header {
 
 .home-cta {
   font-size: var(--text-md);
-  padding: 0 0 1em 0;
+  padding: 0 0 2em 0;
+
 }
 
 footer {

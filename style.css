@@ -2,19 +2,23 @@
   --header-font: "ff-prater-sans-web", sans-serif;
   --body-font: "figgins-sans", sans-serif;
 
-  --header: #025548;
+  --header: #00322a;
   --primary: #f8f6f1;
   --secondary: #dc520e;
   --tertiary: #b8dfff;
 
-  --text-sm: 1.2em;
-  --text-md: 1.7em;
-  --text-lg: 2em;
-  --text-xl: 2.5em;
+  --text-sm: 20px;
+  --text-md: 28px;
+  --text-lg: 35px;
+  --text-xl: 47px;
 
   --weight-500: 500;
   --weight-600: 600;
   --weight-700: 700;
+}
+
+a:hover{
+  text-decoration: none;
 }
 
 html {
@@ -78,6 +82,7 @@ header {
   align-items: center;
   padding: 0.5em 1em;
   margin-bottom: 0;
+  top: 0;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
@@ -87,41 +92,48 @@ header {
 
 .header-tagline {
   display: none;
+  font-family: var(--body-font);
+  font-weight: var(--weight-700);
 }
 
 
 /* home section */
 
+.home-container{
+  height: 81vh;
+}
 
 .cta-button {
-  font-family: "figgins-sans", sans-serif;
+  font-family: var(--body-font);
   font-weight: var(--weight-700);
   background-color: var(--secondary);
   color: var(--primary);
-  padding: 0.2em;
+  padding: 7px;
   display: flex;
   justify-content: center;
-  border-radius: 12%/50%;
-  width: 8em;
-  font-size: var(--text-md);
+  border-radius: 500px;
+  width: 250px;
+  font-size: var(--text-lg);
 }
 
 .cta-button:hover {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   text-decoration: none;
 }
 
 .home-cta {
-  font-size: var(--text-md);
-  padding: 0 0 2em 0;
+  font-size: var(--text-lg);
+}
 
+.cta-emphasis{
+  font-weight: var(--weight-700);
 }
 
 footer {
   background-color: var(--tertiary);
   color: black;
-  padding: 1em;
-  height: 8em;
+  padding: 15px;
+  height: 140px;
 }
 
 .about-image {
@@ -131,8 +143,6 @@ footer a {
   color: var(--secondary);
 }
 
-
-
 .section-title {
   color: var(--secondary);
 }
@@ -140,6 +150,7 @@ footer a {
 .emphasis {
   font-weight: var(--weight-600);
 }
+
 
 @media (min-width: 992px) {
   html {
@@ -165,12 +176,11 @@ footer a {
   }
 
   hr {
-    margin-top: 2em;
+    margin-top: 20px;
   }
 
   .header-tagline {
     display: flex;
-    font-family: var(--header-font);
     color: var(--tertiary);
     font-size: var(--text-lg);
   }
